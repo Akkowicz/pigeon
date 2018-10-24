@@ -15,7 +15,8 @@
       <div class="collapse navbar-collapse" id="navbarColor02">
         <ul class="navbar-nav mr-auto">
           <li class="nav-item active">
-            <a class="nav-link" href="#">Dashboard <span class="sr-only">(current)</span></a>
+            <a class="nav-link" href="#">Dashboard <span class="sr-only">(current) </span><span class="badge badge-light"> 9</span>
+              <span class="sr-only">unread messages</span></a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#">Users</a>
@@ -35,22 +36,37 @@
     </div>
   </nav>
   <div class="container postContainer">
-    <div class="row">
-      <div class="col-3"></div>
-      <div class="col-6">
-          <div class="card card-body card-form">
+    <div class="row mb-3 d-flex align-items-stretch">
+      <div class="col-6 col-lg-2 d-flex align-items-stretch">
+        <div class="card">
+          <img class="img-thumbnail" src="https://avatars1.githubusercontent.com/u/19169805?s=400&u=648feeda8fff8ecb91a355ce9149cddb146601b6&v=4" alt="Card image">
+          <div class="card-body">
+            <h6 class="card-subtitle mb-1">Mateusz Przybyłowicz</h6>
+            <h6 class="card-subtitle text-muted mb-3">Poznań</h6>
+            <h6 class="card-subtitle text-muted"><a href="#">Settings</a> | <a href="#">Logout</a></h6>
+          </div>
+        </div>
+      </div>
+      <div class="col-8 col-lg-8 d-flex align-items-stretch">
+          <div class="card card-body d-flex align-items-stretch">
               <p class="lead">What's on your mind?</p>
               <div class="form-group">
-                <textarea name="post" id="" rows="4" class="form-control"></textarea>
+                <textarea name="post" id="post" rows="6" class="form-control"></textarea>
               </div>
+              <input type="hidden" id="id" value="">
+              <p><span class="badge badge-secondary">81/140</span><button type="button" class="post-submit btn btn-primary btn-lg float-right">Post It</button></p>
             </div>
       </div>
-      <div class="col-3"></div>
+      <div class="col-12 col-lg-2 d-flex align-items-stretch">
+          <div class="card card-body d-flex align-items-stretch">
+              Recommended placeholder
+          </div>
+      </div>
     </div>
     <footer>
         <div class="row">
-          <div class="col-lg-12">
-            <p>Icons made by <a href="http://www.freepik.com" title="Freepik">Freepik</a> and <a href="https://www.flaticon.com/authors/smashicons" title="Smashicons">Smashicons</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> are licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></p>
+          <div class="col-12">
+            <p class="text-center">Icons made by <a href="http://www.freepik.com" title="Freepik">Freepik</a> and <a href="https://www.flaticon.com/authors/smashicons" title="Smashicons">Smashicons</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> are licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></p>
           </div>
         </div>
     </footer>

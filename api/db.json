@@ -1,0 +1,16 @@
+{
+    "posts": [
+        {
+            "id": 1,
+            "body": "This is post one."
+        },
+        {
+            "id": 2,
+            "body": "I really like cookies."
+        },
+        {
+            "id": 3,
+            "body": "He's a cookie monster."
+        }
+    ]
+}

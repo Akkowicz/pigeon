@@ -1,5 +1,5 @@
 {
-  "name": "Pigeon",
+  "name": "pigeon",
   "version": "1.0.0",
   "description": "Simple microposts app",
   "main": "app.js",

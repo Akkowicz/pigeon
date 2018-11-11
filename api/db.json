@@ -1,16 +1,40 @@
 {
-    "posts": [
-        {
-            "id": 1,
-            "body": "This is post one."
-        },
-        {
-            "id": 2,
-            "body": "I really like cookies."
-        },
-        {
-            "id": 3,
-            "body": "He's a cookie monster."
-        }
-    ]
+  "posts": [
+    {
+      "id": 1,
+      "body": "This is post one."
+    },
+    {
+      "id": 2,
+      "body": "I really like cookies."
+    },
+    {
+      "id": 3,
+      "body": "He's a cookie monster."
+    },
+    {
+      "body": "Dodane ciastko\n",
+      "id": 4
+    },
+    {
+      "body": "ciastko",
+      "id": 5
+    },
+    {
+      "body": "ciastko",
+      "id": 6
+    },
+    {
+      "body": "ciastko11",
+      "id": 7
+    },
+    {
+      "body": "ciastko11",
+      "id": 8
+    },
+    {
+      "body": "ciastko11",
+      "id": 9
+    }
+  ]
 }

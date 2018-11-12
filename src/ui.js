@@ -1,15 +1,15 @@
 class UI {
     constructor() {
-        this.post = document.querySelector('#posts');
+        this.posts = document.querySelector('#posts');
         this.bodyInput = document.querySelector('#body');
         this.idInput = document.querySelector('#id');
         this.postSubmit = document.querySelector('.post-submit');
+        this.container = document.querySelector('.postsContainer');
         this.forState = 'add';
     }
 
     showPosts(posts) {
         let output = '';
-
         posts.forEach((post) => {
             output += `
                 <div class="card mb-3">
@@ -27,19 +27,42 @@ class UI {
             `;
         });
         
-        this.post.innerHTML = output;
+        this.posts.innerHTML = output;
     }
 
-    showAlert() {
+    showAlert(message, className) {
+        this.clearAlert();
+        // Create element
+        const div = document.createElement('div');
+        // Add classes
+        div.className = className;
+        // Add text
+        div.appendChild(document.createTextNode(message));
+        // Append to the DOM
+        this.container.insertBefore(div, this.posts);
 
+        // Remove after some time
+        setTimeout(() => {
+            this.clearAlert();
+        }, 3000);
+        
     }
 
     clearAlert() {
+        const currentAlert = document.querySelector('.alert');
 
+        if (currentAlert) {
+            currentAlert.remove();
+        }
     }
 
     clearFields() {
         this.bodyInput.value = '';
+    }
+
+    fillForm(data) {
+        this.bodyInput.value = data.body;
+        this.idInput.value = data.id;
     }
 }
 

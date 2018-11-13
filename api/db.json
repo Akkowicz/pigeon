@@ -1,40 +1,16 @@
 {
   "posts": [
     {
-      "id": 1,
-      "body": "This is post one."
+      "body": "Common domesticated cats are found throughout Westeros and Essos, both as pets and often as ferals in the major cities.",
+      "id": 1
     },
     {
-      "id": 2,
-      "body": "I really like cookies."
+      "body": "Common domesticated dogs are found throughout Westeros and Essos. Their larger relatives include wolves and direwolves.",
+      "id": 2
     },
     {
-      "id": 3,
-      "body": "He's a cookie monster."
-    },
-    {
-      "body": "Dodane ciastko\n",
-      "id": 4
-    },
-    {
-      "body": "ciastko",
-      "id": 5
-    },
-    {
-      "body": "ciastko",
-      "id": 6
-    },
-    {
-      "body": "ciastko11",
-      "id": 7
-    },
-    {
-      "body": "ciastko11",
-      "id": 8
-    },
-    {
-      "body": "ciastko11",
-      "id": 9
+      "body": "Doggo is an internet slang term for dog, which is often associated with the word pupper in various ironic meme communities online.",
+      "id": 3
     }
   ]
 }

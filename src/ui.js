@@ -4,8 +4,10 @@ class UI {
         this.bodyInput = document.querySelector('#body');
         this.idInput = document.querySelector('#id');
         this.postSubmit = document.querySelector('.post-submit');
+        this.postCancel = document.querySelector('.post-cancel');
         this.container = document.querySelector('.postsContainer');
-        this.forState = 'add';
+        this.characterCount = document.querySelector('#text-character-count');
+        this.formState = 'add';
     }
 
     showPosts(posts) {
@@ -56,6 +58,10 @@ class UI {
         }
     }
 
+    clearIdInput() {
+        this.idInput.value = '';
+    }
+
     clearFields() {
         this.bodyInput.value = '';
     }
@@ -63,6 +69,33 @@ class UI {
     fillForm(data) {
         this.bodyInput.value = data.body;
         this.idInput.value = data.id;
+
+        this.changeFormState('edit');
+    }
+
+    changeFormState(type) {
+        if (type === 'edit') {
+            this.postSubmit.textContent = 'Update Post';
+            this.postSubmit.className = 'post-submit btn btn-warning btn-lg float-right';
+            this.postCancel.style.display = 'block';
+            this.formState = 'edit';
+        } else {
+            this.postSubmit.textContent = 'Post It';
+            this.postSubmit.className = 'post-submit btn btn-primary btn-lg float-right';
+            this.postCancel.style.display = 'none';
+            this.formState = 'add';
+            this.clearIdInput();
+            this.clearFields();
+        }
+    }
+
+    updateCharacterCountElement(count) {
+        this.characterCount.textContent = count;
+        if (count === 280) {
+            this.characterCount.parentElement.classList = "badge badge-danger";
+        } else {
+            this.characterCount.parentElement.classList = "badge badge-secondary";
+        }
     }
 }
 
